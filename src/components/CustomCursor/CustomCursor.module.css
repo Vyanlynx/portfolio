@@ -1,0 +1,36 @@
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease-out, opacity 0.2s ease-out;
+  mix-blend-mode: difference;
+  opacity: 0.8;
+}
+
+.cursor.hover {
+  opacity: 0.6;
+  border: 2px solid var(--accent-color);
+  background: transparent;
+}
+
+.cursorDot {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  background: var(--text-primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  transition: opacity 0.2s ease-out;
+}
+
+@media (max-width: 768px) {
+  .cursor,
+  .cursorDot {
+    display: none;
+  }
+}
