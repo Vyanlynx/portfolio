@@ -30,15 +30,6 @@ export const DesktopNavigation = ({
           {theme === LIGHT_THEME ? "🌙" : "☀️"}
         </span>
       </button>
-
-      <a
-        href="/resume.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={styles.resumeBtn}
-      >
-        Resume
-      </a>
     </div>
   </div>
 );
